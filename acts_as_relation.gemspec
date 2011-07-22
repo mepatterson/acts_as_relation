@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "acts_as_relation"
-  s.version     = "0.0.2"
+  s.version     = "0.0.3"
   s.authors     = ["hzamani", "Matt Patterson"]
   s.email       = ["mpatterson@adealio.com"]
   s.homepage    = ""
