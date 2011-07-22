@@ -1,11 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "acts_as_relation/version"
 
 Gem::Specification.new do |s|
   s.name        = "acts_as_relation"
-  s.version     = ActsAsRelation::VERSION
-  s.authors     = ["Matt Patterson"]
+  s.version     = "0.0.2"
+  s.authors     = ["hzamani", "Matt Patterson"]
   s.email       = ["mpatterson@adealio.com"]
   s.homepage    = ""
   s.summary     = %q{TODO: Write a gem summary}
