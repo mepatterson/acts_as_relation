@@ -52,7 +52,8 @@ module ActiveRecord
             end
 
             def method_missing(method, *arg, &block)
-              #{name}.send(method, *arg, &block)
+              my_parent = #{name}.classify.constantize.where("#{name}_id" => self.attributes['id'])
+              #{my_parent}.send(method, *arg, &block)
             rescue NoMethodError
               super
             end
