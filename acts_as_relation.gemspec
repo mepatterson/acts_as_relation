@@ -3,12 +3,12 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "acts_as_relation"
-  s.version     = "0.0.3"
+  s.version     = "0.0.4"
   s.authors     = ["hzamani", "Matt Patterson"]
   s.email       = ["mpatterson@adealio.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "http://github.com/mepatterson/acts_as_relation"
+  s.summary     = "Write a gem summary"
+  s.description = "Write a gem description"
 
   s.rubyforge_project = "acts_as_relation"
 

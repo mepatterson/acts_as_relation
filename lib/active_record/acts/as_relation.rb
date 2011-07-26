@@ -52,7 +52,7 @@ module ActiveRecord
             end
 
             def method_missing(method, *arg, &block)
-              #{name}.classify.constantize.where("#{name}_id" => self.attributes['id']).send(method, *arg, &block)
+              respond_to?(:#{name}) ? #{name}.send(method, *arg, &block) : raise("This should never happen.")
             rescue NoMethodError
               super
             end
